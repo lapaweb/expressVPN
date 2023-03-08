@@ -1,7 +1,34 @@
+@font-face {
+  font-family: "NotoSerif";
+  src: url("app/fonts/NotoSerif/NotoSerifRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  }
+
+ @font-face {
+   font-family: "NotoSerifMedium";
+   src: url("app/fonts/NotoSerif/noto-serif-medium.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+   }
+
+ @font-face {
+   font-family: "Inter";
+   src: url("app/fonts/Inter/inter-regular.woff2") format("woff2");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+   }  
+  
+
 
 :root {
   --colorText: #001d2f;
+  --colorText2: #07242f;
   --colorAccent: #0e876d;
+  --colorAccent2: #d4e300;
   --colorBeige:#f9f8f2;
   --colorGrey: #f7f8f9;
   --colorLightBlue: #dbe8e7;
@@ -9,16 +36,18 @@
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #7c1818;
   color: var(--colorText);
   display: block;
   position: relative;
-  /* font-family: raleway_f, sans-serif;
-  line-height: 1.55; */
+  margin: 0;
+  line-height: 1.55;
+  font-family: Inter, sans-serif;
 }
 
 h1 {
   font-size: 100px;
+  font-family: NotoSerifMedium, sans-serif;
 }
 
 .button {
@@ -28,26 +57,44 @@ h1 {
 	color: #ffffff;
   font-size: 20px;
 	text-align: center;
+  text-decoration: none;
 	padding: 13px 34px;
 	border-radius: 30px;
+	transition: all .15s ease;
 }
 
 .button:hover {
-  background-color: #18cb65
+  background-color: var(--colorAccent2);
+  color: var(--colorText2);
+  cursor: pointer;
 }
 
-.s-beige {
-  background-color: var(--colorBeige);
+.section {
+   background-color: #ffffff
 }
 
-.s-gray {
+.section_accent2 {
   background-color: var(--colorGrey);
 }
 
-.s-blue {
+.section_accent {
+  background-color: var(--colorBeige);
+}
+
+.section_accent3 {
   background-color: var(--colorLightBlue);
 }
 
 .main-foot {
   background-color: var(--colorFooter);
+}
+
+.short-advantage {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.short-advantage .column {
+  flex: 1;
 }

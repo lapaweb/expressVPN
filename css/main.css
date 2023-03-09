@@ -90,6 +90,12 @@ h1 {
   background-color: var(--colorFooter);
 }
 
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .short-advantage {
   display: flex;
   flex-direction: row;

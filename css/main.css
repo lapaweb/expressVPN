@@ -6,24 +6,22 @@
   font-display: swap;
   }
 
- @font-face {
-   font-family: "NotoSerifMedium";
-   src: url("app/fonts/NotoSerif/noto-serif-medium.woff2") format("woff2");
-   font-weight: normal;
-   font-style: normal;
-   font-display: swap;
-   }
+  @font-face {
+    font-family: "NotoSerifMedium";
+    src: url("./../app/fonts/NotoSerif/NotoSerifMedium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    }
 
  @font-face {
    font-family: "Inter";
-   src: url("app/fonts/Inter/inter-regular.woff2") format("woff2");
+   src: url("./../app//fonts/Inter/inter-regular.woff2") format("woff2");
    font-weight: normal;
    font-style: normal;
    font-display: swap;
    }  
   
-
-
 :root {
   --colorText: #001d2f;
   --colorText2: #07242f;
@@ -46,8 +44,10 @@ body {
 }
 
 h1 {
-  font-size: 100px;
+  font-size: 5rem;
   font-family: NotoSerifMedium, sans-serif;
+  line-height: 6rem;
+  margin-bottom: auto;
 }
 
 .button {
@@ -69,9 +69,12 @@ h1 {
   cursor: pointer;
 }
 
+/* общие стили по секциям */
+
 .section {
    background-color: #ffffff;
    min-height: 100vh;
+   padding-left: 4rem;
 }
 
 .section_accent2 {
@@ -90,11 +93,31 @@ h1 {
   background-color: var(--colorFooter);
 }
 
+/* стили секции main */
+
 .main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
+.main .button_button-main {
+  margin-top: 3rem;
+}
+
+.column__img_man {
+  width: auto;
+  max-width: 100%;
+}
+
+.text-upper {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.09rem;
+  margin-top: 1.8rem;
+}
+
+/* стили секции mshort-advantage */
 
 .short-advantage {
   display: flex;

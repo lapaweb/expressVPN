@@ -70,7 +70,8 @@ h1 {
 }
 
 .section {
-   background-color: #ffffff
+   background-color: #ffffff;
+   min-height: 100vh;
 }
 
 .section_accent2 {

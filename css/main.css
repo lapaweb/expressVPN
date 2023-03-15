@@ -63,12 +63,21 @@ body {
   font-family: Inter, sans-serif;
 }
 
-h1 {
-  font-size: 5rem;
+h1, h2 {
   font-family: NotoSerifMedium, sans-serif;
-  line-height: 6rem;
   margin-bottom: auto;
 }
+
+h1 {
+  font-size: 5rem;
+  line-height: 6rem;
+}
+
+h2 {
+  margin-top: auto;
+}
+
+
 
 .button {
 	display: inline-block;
@@ -175,4 +184,8 @@ h1 {
 .column_img .img_icon {
   width: 2rem;
 }
+
+/* стили секции place */
+
+
 

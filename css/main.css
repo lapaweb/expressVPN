@@ -145,7 +145,7 @@ h2 {
 }
 
 /* .text-bold {
-  font-family: InterBold, sans-serif;
+  font-weight: 900;
 } */
 
 .text-upper {
@@ -187,5 +187,9 @@ h2 {
 
 /* стили секции place */
 
-
+.section_main {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
 

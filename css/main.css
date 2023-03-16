@@ -79,6 +79,9 @@ h2 {
   line-height: 3rem;
 }
 
+p {
+  line-height: 1.8rem;
+}
 
 
 .button {
@@ -163,6 +166,8 @@ h2 {
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 2.7rem;
 }
 
 .short-advantage .column {
@@ -189,11 +194,17 @@ h2 {
 
 /* стили секции two-c */
 
+.two-c {
+  padding-left: 0;
+}
+
 .two-c .container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 4rem;
+  /* gap: 4rem; */
+  margin-left: 6rem;
+  margin-right: 6rem;
 }
 
 .two-c .column {
@@ -204,4 +215,19 @@ h2 {
   width: auto;
   max-width: 100%;
 }
+
+.two-c .column_img {
+  padding-left: 6rem;
+  max-width: 23rem;
+}
+
+.two-c .column_content {
+  padding-left: 6rem;
+}
+
+.two-c .button_button-main {
+  margin-top: 2rem;
+}
+
+
 

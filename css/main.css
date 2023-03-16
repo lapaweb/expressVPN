@@ -254,5 +254,10 @@ p {
   margin-top: 2rem;
 }
 
+.column_logos {
+  display: flex;
+  gap: 0.5rem;
+}
+
 
 

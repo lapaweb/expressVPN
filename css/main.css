@@ -103,6 +103,31 @@ p {
   cursor: pointer;
 }
 
+.link {
+	display: inline-block;
+	border: none;
+	color: var(--colorAccent);
+  font-size: 16px;
+	text-align: center;
+  letter-spacing: 0.09rem;
+  text-decoration: none;
+	/* padding: 13px 34px; */
+	transition: all .15s ease;
+  background-image: linear-gradient(var(--colorAccent),var(--colorAccent)),linear-gradient(transparent,transparent),linear-gradient(var(--colorAccent),var(--colorAccent));
+  background-position: 100% 100%,0 100%,0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,0 2px,0 2px;
+}
+
+.link:hover {
+  color: var(--colorText2);
+  cursor: pointer;
+  background-image: linear-gradient(var(--colorAccent2),var(--colorAccent2)),linear-gradient(transparent,transparent),linear-gradient(var(--colorAccent2),var(--colorAccent2));
+  /* animation-duration: .8s; */
+  /* animation-timing-function: ease-in-out;
+  animation-name: eds-animated-text-link; */
+}
+
 /* общие стили по секциям */
 
 .section {

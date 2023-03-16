@@ -79,6 +79,10 @@ h2 {
   line-height: 3rem;
 }
 
+/* h3 {
+  font-size: 2rem;
+} */
+
 p {
   line-height: 1.8rem;
 }
@@ -257,6 +261,39 @@ p {
 .column_logos {
   display: flex;
   gap: 0.5rem;
+}
+
+/* стили секции advantage */
+
+.advantage h3 {
+  font-family: NotoSerifMedium, sans-serif;
+  margin-bottom: auto;
+  font-size: 1.8rem;
+}
+
+.advantage .container {
+  display: flex;
+  gap: 3rem;
+}
+
+.advantage .column {
+  flex: 1;
+  text-align: center;
+}
+
+.advantage .conteiner-link {
+  text-align: center;
+}
+
+.advantage .img {
+  height: auto;
+  width: auto;
+  max-width: 1rem;
+}
+
+.advantage .column__img {
+  max-width: 15rem;
+  /* max-width: 100%; */
 }
 
 

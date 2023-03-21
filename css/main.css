@@ -197,6 +197,7 @@ p {
   gap: 1rem;
   padding-top: 1rem;
   padding-bottom: 2.7rem;
+  flex-wrap: wrap;
 }
 
 .short-advantage .column {
@@ -273,15 +274,23 @@ p {
 
 .advantage .container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* flex-direction: row; */
+
+}
+
+/* .advantage .container_col {
+  display: flex;
   gap: 3rem;
-}
+  flex-wrap: wrap;
+  flex-direction: row;
+  max-width: 100%;
+  width: 100%;
+} */
 
-.advantage .column {
+/* .advantage .column {
   flex: 1;
-  text-align: center;
-}
-
-.advantage .conteiner-link {
   text-align: center;
 }
 
@@ -289,12 +298,41 @@ p {
   height: auto;
   width: auto;
   max-width: 1rem;
-}
+} */
 
-.advantage .column__img {
+.advantage .column__img_ad {
   max-width: 15rem;
   /* max-width: 100%; */
 }
 
+.advantage .conteiner-link {
+  text-align: center;
+  margin-top: 5rem;
+}
 
+
+/* стили секции locations */
+
+.locations .container {
+  padding-top: 5rem;
+  padding-bottom: 6.5rem;
+}
+
+.locations .section__title {
+  text-align: center;
+}
+
+.locations .section__img {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.locations .section__img_loc {
+  max-width: 60rem;
+}
+
+.locations .conteiner-link {
+  text-align: center;
+  margin-top: 3rem;
+}
 

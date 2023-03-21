@@ -336,3 +336,14 @@ p {
   margin-top: 3rem;
 }
 
+/* стили секции reviews */
+
+.reviews .container {
+  padding-top: 5rem;
+  padding-bottom: 6.5rem;
+}
+
+.reviews .section__title {
+  text-align: center;
+}
+

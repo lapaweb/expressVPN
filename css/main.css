@@ -318,20 +318,20 @@ p {
   padding-bottom: 6.5rem;
 }
 
-.locations .section__title {
+.locations .container__title {
   text-align: center;
 }
 
-.locations .section__img {
+.locations .container__img {
   margin-top: 4rem;
   text-align: center;
 }
 
-.locations .section__img_loc {
+.locations .container__img_loc {
   max-width: 60rem;
 }
 
-.locations .conteiner-link {
+.locations .container-link {
   text-align: center;
   margin-top: 3rem;
 }
@@ -343,7 +343,7 @@ p {
   padding-bottom: 6.5rem;
 }
 
-.reviews .section__title {
+.reviews .container__title {
   text-align: center;
 }
 

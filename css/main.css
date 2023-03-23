@@ -90,7 +90,7 @@ p {
 
 .button {
 	display: inline-block;
-	border: none;
+	border: 2px solid var(--colorAccent);
 	background-color: var(--colorAccent);
 	color: #ffffff;
   font-size: 20px;
@@ -103,12 +103,29 @@ p {
 
 .button:hover {
   background-color: var(--colorAccent2);
+  border: 2px solid var(--colorAccent2);
   color: var(--colorText2);
   cursor: pointer;
 }
 
+
+.button__button_accent {
+	display: inline-block;
+	border: 2px solid var(--colorAccent);
+	background-color: #ffffff;
+	color: var(--colorAccent);
+  font-size: 20px;
+	text-align: center;
+  text-decoration: none;
+	padding: 13px 34px;
+	border-radius: 30px;
+	transition: all .15s ease;
+}
+
+
 .link {
 	display: inline-block;
+  position: relative;
 	border: none;
 	color: var(--colorAccent);
   font-size: 16px;
@@ -121,16 +138,52 @@ p {
   background-position: 100% 100%,0 100%,0 100%;
   background-repeat: no-repeat;
   background-size: 100% 2px,0 2px,0 2px;
+
 }
+
+/* .link::after {
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  content: '';
+  background-color: var(--colorAccent);
+  transition: transform .8s ease-in-out;
+  transform-origin: 100% 50%;
+} */
+
+/* .link::before {
+  position: absolute;
+  bottom: -2px;
+  height: 2px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  content: '';
+  background-color: var(--colorAccent);
+  transition: transform .8s .8s ease-in-out;
+  transform-origin: 0% 50%;
+  transform: scaleX(0);
+} */
 
 .link:hover {
   color: var(--colorText2);
   cursor: pointer;
   background-image: linear-gradient(var(--colorAccent2),var(--colorAccent2)),linear-gradient(transparent,transparent),linear-gradient(var(--colorAccent2),var(--colorAccent2));
-  /* animation-duration: .8s; */
-  /* animation-timing-function: ease-in-out;
-  animation-name: eds-animated-text-link; */
+  animation-duration: .8s;
+  animation-timing-function: ease-in-out;
+  animation-name: eds-animated-text-link;
 }
+
+/* .link:hover::after {
+  transform: scaleX(0);
+} 
+
+.link:hover::before {
+  transform: scaleX(1);
+}  */
 
 /* общие стили по секциям */
 
@@ -346,5 +399,50 @@ p {
 
 .reviews .container__title {
   text-align: center;
+}
+
+
+/* стили секции assurance */
+
+.assurance {
+  padding-top: 8rem;
+}
+
+
+.assurance .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  /* gap: 10rem; */
+}
+
+.assurance .column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* .assurance .column__img {
+  height: 5rem;
+} */
+
+.assurance .column__img_sup {
+  height: 7rem;
+}
+
+.assurance h3 {
+  font-family: NotoSerifMedium, sans-serif;
+  margin-bottom: auto;
+  font-size: 1.8rem;
+}
+
+.assurance .right {
+  border-left: 1px solid #ccd2d5;
+  margin-left: 8rem;
+  padding-left: 8rem;
 }
 

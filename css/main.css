@@ -330,32 +330,38 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   /* flex-direction: row; */
-
 }
 
-/* .advantage .container_col {
+.advantage .container_col {
   display: flex;
-  gap: 3rem;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   max-width: 100%;
   width: 100%;
-} */
+  justify-content: center;
+  /* gap: 3rem; */
+}
 
-/* .advantage .column {
-  flex: 1;
+.advantage .column__img {
+  order: 0;
+  width: 33%;
+}
+
+.advantage .column__title {
+  order: 1;
+  width: 33%;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.advantage .column__text {
+  order: 2;
+  width: 33%;
   text-align: center;
 }
 
-.advantage .img {
-  height: auto;
-  width: auto;
-  max-width: 1rem;
-} */
-
 .advantage .column__img_ad {
-  max-width: 15rem;
-  /* max-width: 100%; */
+  max-width: 20rem;
 }
 
 .advantage .conteiner-link {
@@ -402,6 +408,7 @@ p {
 }
 
 
+
 /* стили секции assurance */
 
 .assurance {
@@ -413,8 +420,8 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 9rem;
-  margin-right: 9rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
   /* gap: 10rem; */
 }
 
@@ -442,7 +449,19 @@ p {
 
 .assurance .right {
   border-left: 1px solid #ccd2d5;
-  margin-left: 8rem;
+  margin-left: 5rem;
   padding-left: 8rem;
 }
 
+
+@keyframes eds-animated-text-link {
+  0% {
+    background-size:100% 2px,0 2px,0 2px
+  }
+  50% {
+    background-size:0 2px,100% 2px,0 2px
+  }
+  to {
+    background-size:0 2px,0 2px,100% 2px
+  }
+}

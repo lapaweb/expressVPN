@@ -486,6 +486,68 @@ p {
   height: auto;
 }
 
+.tab-list {
+  display: block;
+  font-size: 0;
+  margin: 0 auto 4rem;
+  overflow: auto;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.tab-list li {
+  display: inline-block;
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.tab-list li a {
+  color: #a2acb3;
+  padding: 0 1.5rem;
+}
+
+.tab-list a {
+  align-items: center;
+  background-image: linear-gradient(#0f866c,#0f866c),linear-gradient(transparent,transparent),linear-gradient(#0f866c,#0f866c);
+  background-image: linear-gradient(transparent,transparent);
+  background-position: 100% 100%,0 100%,0 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 2px,0 2px,0 2px;
+  border: none;
+  color: #0f866c;
+  color: #a2acb3;
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 4.5rem;
+  letter-spacing: .12rem;
+  margin-bottom: -0.2rem;
+  padding: 0 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.tab-list li.active a {
+  background-image: linear-gradient(#001d2f,#001d2f);
+  color: #001d2f;
+}
+
+.tab-wrap {
+  position: relative;
+}
+
+.tab-wrap:after {
+  background-color: rgba(0,29,47,.2);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.2rem;
+  position: absolute;
+  width: 100%;
+}
+
 .container__row-brands {
   display: flex;
   gap: 2rem;
@@ -507,6 +569,10 @@ p {
 .conteiner__content-reviews {
   display: flex;
   gap: 8rem;
+  min-height: 29rem;
+  height: 100%;
+  transform: translateX(0px);
+  width: 200%;
 }
 
 .container__col {
@@ -525,13 +591,15 @@ p {
   line-height: 3rem;
 }
 
-.container__raiting-text p {
+.container__text-rating p {
   text-align: center;
 }
 
-.container__raitng-logo img {
+.container__logo-rating img {
   margin-bottom: 1rem;
 }
+
+
 
 
 

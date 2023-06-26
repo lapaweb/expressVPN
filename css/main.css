@@ -204,6 +204,79 @@ p {
 
 /* стили header */
 
+.container-header{
+  background-color: #f9f8f2;
+  top:0;
+  margin: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 204;
+}
+
+
+.container-header-col {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  height: 100%;
+  max-width: 144rem;
+  padding: 0 1rem 0 2rem;
+}
+
+.header-logo {
+  background: url(/expressVPN/app/image/header/expressvpn-logo-red.svg)50%/contain no-repeat;
+  margin-right: 1rem;
+  width: 13rem;
+}
+
+.header-logo a {
+  height: 4rem;
+  width: 20.8rem;
+}
+
+.language-menu {
+  display: flex;
+  list-style: none;
+}
+
+/* .language-point {
+
+} */
+
+.language-picker {
+  /* background-image: url(/expressVPN/app/image/header/globe.svg); */
+  /* padding-right: 0; */
+  /* display: block; */
+  /* text-align: center; */
+  /* background-position: 0,100%; */
+  /* background-size: 2.4rem; */
+  border: none;
+  color: #001d2f;
+  font-size: 1rem;
+  font-weight: 550;
+  line-height: 2.4rem;
+  /* padding-left: 2.9rem; */
+  /* padding-right: 2.6rem; */
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.language-picker::before {
+  background-image: url(/expressVPN/app/image/header/globe.svg); 
+  background-repeat: no-repeat;
+  content: "";
+  /* position: absolute; */
+  display: inline-block;
+  vertical-align: text-bottom;
+  /* background-size: cover; */
+  margin-right: 0.6rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  /* min-height: 1rem; */
+  /* min-width: 1rem; */
+}
+
 
 
 /* общие стили по секциям */
@@ -237,6 +310,7 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 4rem;
 }
 
 .main .button_button-main {

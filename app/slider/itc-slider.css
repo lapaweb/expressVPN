@@ -13,7 +13,7 @@
 
 .itc-slider-wrapper {
   overflow: hidden;
-  background-color: #eee;
+  /* background-color: #eee; */
 }
 
 .itc-slider-items {
@@ -89,7 +89,7 @@
 
 /* индикаторы */
 .itc-slider-indicators {
-  position: absolute;
+  /* position: absolute; */
   right: 0;
   bottom: 0;
   left: 0;
@@ -104,18 +104,20 @@
 .itc-slider-indicator {
   flex: 0 1 auto;
   box-sizing: content-box;
-  width: 30px;
-  height: 5px;
+  /* width: 30px; */
+  /* height: 5px; */
   margin-right: 3px;
   margin-left: 3px;
-  text-indent: -999px;
-  background-color: rgb(255 255 255 / 50%);
-  background-clip: padding-box;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
+  /* text-indent: -999px; */
+  /* background-color: rgba(197, 68, 68, 0.5); */
+  /* background-clip: padding-box; */
+  /* border-top: 15px solid transparent; */
+  /* border-bottom: 15px solid transparent; */
   cursor: pointer;
 }
 
-.itc-slider-indicator-active {
-  background-color: rgb(255 255 255 / 90%);
+
+.itc-slider-indicator-active p {
+  background-image: linear-gradient(#001d2f,#001d2f);
+  color: #001d2f;
 }

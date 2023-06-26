@@ -7,12 +7,23 @@
   <title>LapaWeb VPN</title>
   <link rel="icon" href="app/image/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/expressVPN/app/slider/itc-slider.css">
+  <script src="/expressVPN/app/slider/itc-slider.js" defer></script>
 
 </head>
 <body>
 
-  <header class="header">
-    header
+  <header class="header white-bg">
+    <div class="container-header">
+      <div class="container-header-col">
+        <a href="#" class="header-logo" title="Express VPN"></a>
+        <ul class="language-menu">
+          <li class="language-point">
+            <button class="language-picker">Русский</button>
+          </li>
+        </ul>
+      </div>
+    </div> 
   </header>
 
 
@@ -144,30 +155,6 @@
 
   <section class="section section_main advantage">
 
-    <!-- <div class="container">
-      <div class="column">
-        <div class="column__img">
-          <img class="column__img_ad" src="app/image/advantage/security.png" alt="">
-        </div>
-        <h3>Более мощная защита данных</h3>
-        <p>Возьмите под контроль конфиденциальность и безопасность в Интернете с помощью первоклассного шифрования.</p>
-      </div>
-      <div class="column">
-        <div class="column__img">
-          <img class="column__img_ad" src="app/image/advantage/anywhere.png" alt="">
-        </div>
-        <h3>Работает безупречно везде</h3>
-        <p>Используйте Интернет так, как вам хочется. В пути или дома.</p>
-      </div>
-      <div class="column">
-        <div class="column__img">
-          <img class="column__img_ad" src="app/image/advantage/speeds.png" alt="">
-        </div>
-        <h3>Молниеносное соединение</h3>
-        <p>Наша VPN-сеть создана для скорости и использует технологии нового поколения.</p>
-      </div>
-    </div> -->
-
     <div class="container">
 
       <div class="container container_col">
@@ -206,8 +193,6 @@
 
   </div>
 
-        
-
    <div class="conteiner-link">
     <a href="#" class="link">Другие преимущества ></a>
    </div>
@@ -231,105 +216,118 @@
 
   <section class="section section_accent reviews"> 
     <div class="container">
-      <div class="container__title">
-        <h2>Что говорят пользователи про ExpressVPN</h2>
-      </div>
-      <div class="tab-wrap">
-        <ul class="tab-class tab-list">
-          <li class="active">
-            <a href="#">Отзывы</a>
-          </li>
-          <li class="active">
-            <a href="#">Твиты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="container__cards">
-        <div class="conteiner__content-reviews">
-          <div class="container__col rating">
-            <div class="container__rating">
-              <div class="container__logo-rating">
-                <img src="./app/image/reviews/reviews/logo-trustpilot.svg" alt="logo-trustpilot">
-              </div>
-              <div class="container__stars-rating">
-                <img src="./app/image/reviews/reviews/rating-trustpilot.svg" alt="rating-trustpilot">
-              </div>
-              <div class="container__text-rating">
-                <p>Превосходно — оценка 4,6 из 5</p>
-              </div>
-            </div>
-            <div class="container__rating">
-              <div class="container__logo-rating">
-                <img src="./app/image/reviews/reviews/logo-AppStore.svg" alt="logo-AppStore">
-              </div>
-              <div class="container__stars-rating">
-                <img src="./app/image/reviews/reviews/rating-AppStore.svg" alt="rating-AppStore">
-              </div>
-              <div class="container__text-rating">
-                <p>Оценка 4,7 из 5</p>
-              </div>
-            </div>
-          </div>
-          <div class="container__col">
-            <div class="container__reviews-text">
-              <p>Отличное приложение, часто пользуюсь им для защиты своих устройств за границей.</p>
-            </div>
-            <div class="container__reviews-sign">
-              <p>Sean, Trustpilot</p>
-            </div>
-          </div>
-          <div class="container__col">
-            <div class="container__reviews-text">
-              <p>Я пользуюсь этим VPN-сервисом с 2016 года и не перестаю удивляться качеству его услуг.</p>
-            </div>
-            <div class="container__reviews-sign">
-              <p>Nakiboshi, Apple App Store</p>
-            </div>
-          </div>
-          <div class="container__col">
-            <div class="container__twits-img">
-              <img src="/expressVPN/app/image/reviews/twits/DustinGreiger.png" alt="DustinGreiger">
-            </div>
-            <div class="container__twits-text">
-              <p>Зарегистрировался вчера в @expressvpn. Отличное решение для тех, кто выезжает из страны!</p>
-            </div>
-            <div class="container__twits-sign">
-              <p>Dustin Greiger</p>
-            </div>
-          </div>
-          <div class="container__col">
-            <div class="container__twits-img">
-              <img src="/expressVPN/app/image/reviews/twits/Nill088.png" alt="Nill088">
-            </div>
-            <div class="container__twits-text">
-              <p>Обожаю express за безопасность, скорость и всё остальное 👍</p>
-            </div>
-            <div class="container__twits-sign">
-              <p>Nill088</p>
-            </div>
-          </div>
-          <div class="container__col">
-            <div class="container__twits-img">
-              <img src="/expressVPN/app/image/reviews/twits/JonNarong.png" alt="JonNarong">
-            </div>
-            <div class="container__twits-text">
-              <p>О@ExpressVPN — незаменимый помощник при удаленной работе.</p>
-            </div>
-            <div class="container__twits-sign">
-              <p>JonNarong</p>
-            </div>
-          </div>
+      <div class="container__title-o">
+        <div class="container__title">
+          <h2>Что говорят пользователи про ExpressVPN</h2>
         </div>
       </div>
+      <div class="itc-slider" data-slider="itc-slider" data-swipe="false">
+        <div class="itc-slider-tab">
+          <ol class="itc-slider-indicators">
+            <li class="itc-slider-indicator">
+              <p data-slide-to="0">Отзывы</p>
+            </li>
+            <li class="itc-slider-indicator">
+              <p data-slide-to="1">Твиты</p>
+            </li>
+          </ol>
+        </div>
+
+
+        <div class="itc-slider-wrapper">
+          <div class="itc-slider-items">
+            <div class="itc-slider-item">
+
+              <div class="slider-rating">
+                <div class="container__col rating">
+                  <div class="container__rating">
+                    <div class="container__logo-rating">
+                      <img src="./app/image/reviews/reviews/logo-trustpilot.svg" alt="logo-trustpilot">
+                    </div>
+                    <div class="container__stars-rating">
+                      <img src="./app/image/reviews/reviews/rating-trustpilot.svg" alt="rating-trustpilot">
+                    </div>
+                    <div class="container__text-rating">
+                      <p>Превосходно — оценка 4,6 из 5</p>
+                    </div>
+                  </div>
+                  <div class="container__rating">
+                    <div class="container__logo-rating">
+                      <img src="./app/image/reviews/reviews/logo-AppStore.svg" alt="logo-AppStore">
+                    </div>
+                    <div class="container__stars-rating">
+                      <img src="./app/image/reviews/reviews/rating-AppStore.svg" alt="rating-AppStore">
+                    </div>
+                    <div class="container__text-rating">
+                      <p>Оценка 4,7 из 5</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="container__col">
+                  <div class="container__reviews-text">
+                    <p>Отличное приложение, часто пользуюсь им для защиты своих устройств за границей.</p>
+                  </div>
+                  <div class="container__reviews-sign">
+                    <p>Sean, Trustpilot</p>
+                  </div>
+                </div>
+
+                <div class="container__col">
+                  <div class="container__reviews-text">
+                    <p>Я пользуюсь этим VPN-сервисом с 2016 года и не перестаю удивляться качеству его услуг.</p>
+                  </div>
+                  <div class="container__reviews-sign">
+                    <p>Nakiboshi, Apple App Store</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="itc-slider-item">
+              <div class="slider-twits">
+                <div class="container__col">
+                  <div class="container__twits-img">
+                    <img src="/expressVPN/app/image/reviews/twits/DustinGreiger.png" alt="DustinGreiger">
+                  </div>
+                  <div class="container__twits-text">
+                    <p>Зарегистрировался вчера в @expressvpn. Отличное решение для тех, кто выезжает из страны!</p>
+                  </div>
+                  <div class="container__twits-sign">
+                    <p>Dustin Greiger</p>
+                  </div>
+                </div>
+                <div class="container__col">
+                  <div class="container__twits-img">
+                    <img src="/expressVPN/app/image/reviews/twits/Nill088.png" alt="Nill088">
+                  </div>
+                  <div class="container__twits-text">
+                    <p>Обожаю express за безопасность, скорость и всё остальное 👍</p>
+                  </div>
+                  <div class="container__twits-sign">
+                    <p>Nill088</p>
+                  </div>
+                </div>
+                <div class="container__col">
+                  <div class="container__twits-img">
+                    <img src="/expressVPN/app/image/reviews/twits/JonNarong.png" alt="JonNarong">
+                  </div>
+                  <div class="container__twits-text">
+                    <p>@ExpressVPN — незаменимый помощник при удаленной работе.</p>
+                  </div>
+                  <div class="container__twits-sign">
+                    <p>JonNarong</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>      
+
+      </div>
+
       <div class="container__brands">
-        <!-- <ul class="container__li-brands">
-          <li> <img src="app/image/reviews/logo/wsj-logo.svg" alt="FT" width="164"></li>
-          <li> <img src="app/image/reviews/logo/cnet-logo-small-expressvpn-reviews.svg" alt="Fcnet" width="164"></li>
-          <li> <img src="app/image/reviews/logo/Vox-logo.svg" alt="Vox" width="164"></li>
-          <li> <img src="app/image/reviews/logo/techcrunch-logo.svg" alt="techcrunch" width="164"></li>
-          <li> <img src="app/image/reviews/logo/FT-logo.svg" alt="FT" width="164"></li>
-          <li> <img src="app/image/reviews/logo/bbc-logo.svg" alt="bbc" width="164"></li>
-        </ul> -->
         <div class="container__row-brands">
           <div class="row-brands__block"><img src="app/image/reviews/logo/wsj-logo.svg" alt="FT" fill="red"></div>
           <div class="row-brands__block"><img src="app/image/reviews/logo/cnet-logo-small-expressvpn-reviews.svg" alt="Fcnet"></div>

@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LapaWeb VPN</title>
   <link rel="icon" href="app/image/favicon.ico" type="image/x-icon">
+
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="/expressVPN/app/slider/itc-slider.css">
   <script src="/expressVPN/js/app.js"></script>
+
+  <link rel="stylesheet" href="/expressVPN/app/slider/itc-slider.css">
   <script src="/expressVPN/app/slider/itc-slider.js" defer></script>
+
 
 </head>
 <body>
@@ -20,11 +23,19 @@
         <a href="#" class="header-logo" title="Express VPN"></a>
         <ul class="language-menu">
           <li class="language-point">
-            <button class="language-picker">Русский</button>
+            <button  id="callback-button" class="language-picker">Русский</button>
           </li>
         </ul>
       </div>
     </div> 
+    <div class="modal" id="modal-1">
+      <div class="modal__content">
+        <button class="modal__close-button"></button>
+        <!-- Контент модального окна -->
+        <h4 class="modal__title">Выберите язык</h4>
+        <p class="modal__descruption">English</p>
+      </div>
+    </div>
   </header>
 
 
@@ -371,13 +382,10 @@
     </div>
   </section>
 
+
   <footer class="footer main-foot">
     footer
   </footer>
-
-
-
-
   
 </body>
 </html>

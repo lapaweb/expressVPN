@@ -61,6 +61,12 @@ body {
   margin: 0;
   line-height: 1.55;
   font-family: Inter, sans-serif;
+  top: 0 !important;
+}
+
+.skiptranslate {
+  display: none;
+  height: 0;
 }
 
 h1, h2 {
@@ -86,7 +92,6 @@ h2 {
 h4 {
   font-size: 1.5rem;
   line-height: 0.8;
-}
 }
 
 p {
@@ -117,7 +122,7 @@ p {
 }
 
 .button-arrow::after {
-  background-image: url(../app/image/arrow.svg);
+  background-image: url(../app/image/main/arrow-white.svg);
   background-repeat: no-repeat;
   content: "";
   display: inline-block;
@@ -128,6 +133,10 @@ p {
   width: 1.4rem;
   height: 1.4rem;
   fill: #ffffff;
+}
+
+.button-arrow:hover::after {
+  background-image: url(../app/image/main/arrow-black.svg);
 }
 
 
@@ -246,43 +255,42 @@ p {
 }
 
 /* .language-point {
-
+  display: flex;
 } */
 
 .language-picker {
-  /* background-image: url(/expressVPN/app/image/header/globe.svg); */
-  /* padding-right: 0; */
-  /* display: block; */
-  /* text-align: center; */
-  /* background-position: 0,100%; */
-  /* background-size: 2.4rem; */
+  display: inline-block;
   border: none;
   color: #001d2f;
   font-size: 1rem;
   font-weight: 550;
   line-height: 2.4rem;
-  /* padding-left: 2.9rem; */
-  /* padding-right: 2.6rem; */
   text-decoration: none;
   cursor: pointer;
   background-color: transparent;
+  /* text-align: center; */
 }
+
 
 .language-picker::before {
-  background-image: url(/expressVPN/app/image/header/globe.svg); 
+  background-image: url(/expressVPN/app/image/header/globe.svg);
   background-repeat: no-repeat;
   content: "";
-  /* position: absolute; */
   display: inline-block;
   vertical-align: text-bottom;
-  /* background-size: cover; */
-  margin-right: 0.6rem;
-  width: 1.4rem;
-  height: 1.4rem;
-  /* min-height: 1rem; */
-  /* min-width: 1rem; */
+  background-size: cover;
+  margin-right: 0.25rem;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
+.language-picker:hover {
+  color: var(--colorAccent);
+}
+
+.language-picker:hover::before {
+  background-image: url(/expressVPN/app/image/header/globe-acent.svg);
+}
 
 
 /* общие стили по секциям */
@@ -737,46 +745,34 @@ p {
 }
 
 
-.active {
+.scroll_active {
   background-color: #fff;
-  /* transform: translateY(-150%); */
-  /* animation: ani 1s forwards; */
 	transition: all .25s ease;
   z-index: 300;
 }
 
-
-/* .modal {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1000;
-  background: rgba(0, 0, 0, 0.9);
+.language_modal {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  overflow-y: scroll;
-  padding: 60px 15px;
-} */
+}
+
 
 .modal {
   position: absolute;
   visibility: hidden;
   opacity: 0;
   transition: .3s;
-  top: -1000px;
+  /* top: -1000px; */
   right: 0;
   bottom: 0;
   left: 0;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0,29,47,.4);
+  box-shadow: 0 0.2rem 1.5rem rgba(0,0,0,.1);
   display: flex;
   justify-content: center;
   align-items: flex-start;
   overflow-y: scroll;
-  padding: 60px 15px;
+  padding: 14rem 1rem;
 }
  
 .modal_active {
@@ -790,20 +786,18 @@ p {
 .modal__content {
   width: 100%;
   max-width: 500px;
-  padding: 50px;
-  background: #f9f9f9;
-  border-radius: 3px;
+  padding: 2.3rem;
+  background: #fff;
+  border-radius: 0.5rem;
   position: relative;
-  box-shadow: 0 5px 15px black;
 }
  
 .modal__close-button {
+  background-position: 50%;
   background: #fff;
-  height: 30px;
-  width: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0;
   border: none;
   position: absolute;
   right: 0;
@@ -811,47 +805,71 @@ p {
   background: none;
   cursor: pointer;
   transition: .3s;
-  outline: none;
 }
 
 .modal__close-button::before {
-  background-image: url(/expressVPN/app/image/close.svg);
-  height: 1.4rem;
-  width: 1.4rem;
+  background-image: url(/expressVPN/app/image/header/modal/close.svg);
+  height: 2.5rem;
+  width: 2.5rem;
   content: "";
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  right: 0.8rem;
-  top: 0.8rem;
+  right: 0rem;
+  top: 0rem;
   transition: .3s;
+  background-position: center;
+  background-size: 50%;
 }
 
  
 .modal__close-button:hover::before {
-  background-image: url(/expressVPN/app/image/close_black.svg);
-  height: 1.4rem;
-  width: 1.4rem;
+  background-image: url(/expressVPN/app/image/header/modal/close_black.svg);
+  height: 2.5rem;
+  width: 2.5rem;
   content: "";
   background-repeat: no-repeat;
   display: inline-block;
   position: absolute;
-  right: 0.8rem;
-  top: 0.8rem;
+  right: 0rem;
+  top: 0rem;
   transition: .3s;
-
+  background-position: center;
+  background-size: 50%;
 }
  
 .modal__title {
  text-align: center;
- margin-top: 0;
- margin-bottom: 1rem;
+ margin-top: 1rem;
+ margin-bottom: 1.3rem;
 }
  
 .modal__description {
   font-size: 1.125rem;
 }
 
+.modal__language-selector-container {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  row-gap: 1rem;
+  padding: 0;
+}
+
+.modal__language-selector-container li {
+  list-style: none;
+}
+
+.modal__language-selector-container a {
+  text-decoration: none;
+  color: var(--colorText);
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  font-weight: 500;
+}
+
+.modal__language-selector-container a:active, .modal__language-selector-container a:focus, .modal__language-selector-container a:hover {
+  color: var(--colorAccent);
+}
 
 
 

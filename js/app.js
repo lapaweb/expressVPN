@@ -1,8 +1,8 @@
 window.addEventListener('scroll', function() {
   if (scrollY  > 100) {
-    document.querySelector('.container-header').classList.add('active')
+    document.querySelector('.container-header').classList.add('scroll_active')
   } else {
-    document.querySelector('.container-header').classList.remove('active')
+    document.querySelector('.container-header').classList.remove('scroll_active')
   }
 })
 

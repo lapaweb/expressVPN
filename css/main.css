@@ -232,10 +232,9 @@ p {
 .container-header-col {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   height: 100%;
   max-width: 144rem;
-  padding: 0 1rem 0 2rem;
+  padding: 0 2rem 0 2rem;
 }
 
 .header-logo {
@@ -870,6 +869,120 @@ p {
 .modal__language-selector-container a:active, .modal__language-selector-container a:focus, .modal__language-selector-container a:hover {
   color: var(--colorAccent);
 }
+
+
+.container-footer {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  min-height: 6.25rem;
+  padding-left: 8.5rem;
+  padding-right: 4.5rem;
+  justify-content: space-between;
+}
+
+.container-footer p {
+  font-size: 0.8rem;
+  line-height: 1.3;
+  color: var(--colorGrey);
+  opacity: 0.6;
+}
+
+.footer-bottom-social {
+  display: flex;
+}
+
+.footer a {
+  border: none;
+  color: #fff;
+  color: #ccd2d5;
+  display: inline-block;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.sr-only {
+  clip: rect(0 0 0 0);
+  border: 0;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.footer-icon-youtube::before {
+ background-image: url(/expressVPN/app/image/footer/youtube.svg);
+ content: "";
+ display: inline-block;
+ width: 3rem;
+ height: 3rem;
+ background-repeat: no-repeat;
+ background-position: center;
+}
+
+.footer-icon-linkedin::before {
+  background-image: url(/expressVPN/app/image/footer/linkedin.svg);
+  content: "";
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+
+ .footer-icon-twitter::before {
+  background-image: url(/expressVPN/app/image/footer/twitter.svg);
+  content: "";
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+
+ .footer-icon-facebook::before {
+  background-image: url(/expressVPN/app/image/footer/facebook.svg);
+  content: "";
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+
+ .footer-icon-instagram::before {
+  background-image: url(/expressVPN/app/image/footer/instagram.svg);
+  content: "";
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+
+ .footer-icon-youtube:hover::before {
+  background-image: url(/expressVPN/app/image/footer/youtube-acent.svg);
+ }
+
+ .footer-icon-linkedin:hover::before {
+  background-image: url(/expressVPN/app/image/footer/linkedin-acent.svg);
+ }
+
+ .footer-icon-twitter:hover::before {
+  background-image: url(/expressVPN/app/image/footer/twitter-acent.svg);
+ }
+
+ .footer-icon-facebook:hover::before {
+  background-image: url(/expressVPN/app/image/footer/facebook-acent.svg);
+ }
+
+ .footer-icon-instagram:hover::before {
+  background-image: url(/expressVPN/app/image/footer/instagram-acent.svg);
+ }
+
 
 
 
